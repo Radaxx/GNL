@@ -1,26 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   ft_strsub.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aparabos <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/22 11:13:39 by aparabos          #+#    #+#             */
-/*   Updated: 2017/12/10 10:32:26 by aparabos         ###   ########.fr       */
+/*   Created: 2017/11/08 18:55:12 by aparabos          #+#    #+#             */
+/*   Updated: 2017/12/09 15:38:27 by aparabos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
+#include "libft.h"
 
-# include <stdio.h>
-# include <stdlib.h>
-# include <unistd.h>
-# include <fcntl.h>
-# include "./libft/libft.h"
+char	*ft_strsubdel(char *s, unsigned int start, size_t len)
+{
+	char	*tmp;
+	size_t	i;
 
-# define BUFF_SIZE 50
-
-int		get_next_line(const int fd, char **line);
-
-#endif
+	i = 0;
+	if (!s)
+		return (0);
+	if (!(tmp = (char *)ft_strnew(len)))
+		return (0);
+	while (s[start] && i < len && tmp != NULL)
+	{
+		tmp[i] = s[start];
+		i++;
+		start++;
+	}
+	free(s);
+	return (tmp);
+}

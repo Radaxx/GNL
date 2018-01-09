@@ -6,7 +6,7 @@
 #    By: aparabos <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/07 12:06:40 by aparabos          #+#    #+#              #
-#    Updated: 2017/12/04 16:40:24 by aparabos         ###   ########.fr        #
+#    Updated: 2017/12/09 15:38:37 by aparabos         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,7 @@ SRCS = ft_pow.c ft_foreach.c ft_sqrt.c ft_factorial.c ft_lstadd.c \
 	   ft_putchar_fd.c ft_putstr.c ft_strcmp.c ft_striter.c ft_strmap.c \
 	   ft_strnequ.c ft_strstr.c ft_isalnum.c ft_memalloc.c ft_memdel.c \
 	   ft_putendl.c ft_putstr_fd.c ft_strcpy.c ft_striteri.c ft_strmapi.c \
-	   ft_strnew.c ft_strsub.c ft_strjoindel.c
+	   ft_strnew.c ft_strsub.c ft_strjoindel.c ft_strsubdel.c
 MAKEFLAGS = s
 
 OBJS = $(SRCS:.c=.o)

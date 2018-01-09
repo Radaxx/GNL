@@ -6,7 +6,7 @@
 /*   By: aparabos <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/07 12:12:03 by aparabos          #+#    #+#             */
-/*   Updated: 2017/12/04 16:40:13 by aparabos         ###   ########.fr       */
+/*   Updated: 2017/12/09 15:37:47 by aparabos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,7 @@ size_t				ft_strlen(const char *str);
 char				*ft_itoa(int n);
 char				**ft_strsplit(char const *s, char c);
 char				*ft_strsub(char const *s, unsigned int start, size_t len);
+char				*ft_strsubdel(char *s, unsigned int start, size_t len);
 char				*ft_strtrim(char const *s);
 char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char				*ft_strmap(char const *s, char (*f)(char));
